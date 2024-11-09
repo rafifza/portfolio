@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Hide horizontal scroll and restrict content to viewport width */
+body,
+html {
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  
+}
+
+/* For WebKit browsers (Chrome, Safari) */
+body::-webkit-scrollbar {
+  width: 0; /* Hides the vertical scrollbar */
+  height: 0; /* Hides the horizontal scrollbar */
+}
+
+/* App container */
+.app-container {
+  overflow-x: hidden;
+  width: 100vw;
+}
+
+/* Enable scroll snapping on the main container */
+.snap-container {
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll; /* Allows vertical scrolling */
+  height: 100vh;
+  scrollbar-width: none; /* Hides scrollbar in Firefox */
+}
+
+/* Hide scrollbar for Firefox */
+.snap-container::-webkit-scrollbar {
+  display: none; /* Hides scrollbar in WebKit browsers */
+}
+
+/* Each section will snap to the center of the viewport */
+.section {
+  scroll-snap-align: start;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
