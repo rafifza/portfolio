@@ -42,7 +42,7 @@ function Experience() {
               </p>
             </div>{" "}
             <div className="w-[8rem] md:w-[14rem]">
-              <p className="text-sm md:text-md text-center">
+              <p className="text-sm md:text-md text-right">
                 Oct 2023 - Feb 2024
               </p>
             </div>
@@ -56,20 +56,43 @@ function Experience() {
         variants={fadeInVariants}
       ></motion.div>
 
-      {/* PT. Asuransi Tripakarta */}
-      <div className="w-full mb-6">
-        <div className="flex justify-between">
+      {/* PT. Asuransi Tripakarta Intern */}
+      <div className="w-full">
+        <div className="w-full flex justify-between">
           <div className="w-full flex flex-row justify-between items-center">
-            <div className="flex flex-col w-[18rem] md-w-full">
-              <h3 className="text-lg md:text-2xl font-semibold">
+            <div className="flex flex-col w-[18rem] md:w-full">
+              <h3 className="text-lg md:text-2xl font-semibold ">
                 PT. Asuransi Tripakarta
               </h3>
               <p className="text-sm md:text-lg">Mobile Developer Internship</p>
-            </div>
+            </div>{" "}
             <div className="w-[8rem] md:w-[14rem]">
-              <p className="text-sm md:text-md text-center">
+              <p className="text-sm md:text-md text-right">
                 May 2024 - Oct 2024
               </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Line under each job */}
+      <motion.div
+        className="w-full h-[2px] bg-gray-400 my-4"
+        variants={fadeInVariants}
+      ></motion.div>
+
+      {/* PT. Asuransi Tripakarta */}
+      <div className="w-full">
+        <div className="w-full flex justify-between">
+          <div className="w-full flex flex-row justify-between items-center">
+            <div className="flex flex-col w-[18rem] md:w-full">
+              <h3 className="text-lg md:text-2xl font-semibold ">
+                PT. Asuransi Tripakarta
+              </h3>
+              <p className="text-sm md:text-lg">Junior Mobile Developer</p>
+            </div>
+            <div className="w-[8rem] md:w-[14rem]">
+              <p className="text-sm md:text-md text-right">Dec 2024 - Now</p>
             </div>
           </div>
         </div>

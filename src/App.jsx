@@ -9,30 +9,6 @@ import Footer from "./components/Footer";
 
 function App() {
   useEffect(() => {
-    const blobs = document.querySelectorAll(".blob");
-
-    const handleMouseMove = (event) => {
-      const x = event.clientX;
-      const y = event.clientY;
-
-      blobs.forEach((blob) => {
-        const rect = blob.getBoundingClientRect();
-        const offsetX = rect.width / 2;
-        const offsetY = rect.height / 2;
-
-        blob.style.transform = `translate3d(${x - offsetX}px, ${
-          y - offsetY
-        }px, 0)`;
-      });
-    };
-
-    document.addEventListener("mousemove", handleMouseMove);
-
-    return () => {
-      document.removeEventListener("mousemove", handleMouseMove);
-    };
-  }, []);
-  useEffect(() => {
     const handleContextMenu = (event) => {
       event.preventDefault();
     };

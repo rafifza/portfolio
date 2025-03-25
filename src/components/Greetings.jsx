@@ -8,9 +8,9 @@ function Greetings() {
       {/* Wrapper for mobile layout */}
       <motion.div
         className="flex flex-col-reverse md:flex-row justify-between items-center w-full"
-        initial={{ opacity: 0, x: -50 }}
+        initial={{ opacity: 0, x: -150 }}
         animate={{ opacity: 1, x: 0 }}
-        transition={{ duration: 0.8, ease: "easeOut" }}
+        transition={{ duration: 1, ease: "easeIn" }}
       >
         {/* Text Section */}
         <div className="text-center md:text-left md:w-[50rem]">
@@ -48,21 +48,20 @@ function Greetings() {
             meaningful impact.
           </p>
         </div>
-
-        {/* Profile Photo */}
-        <motion.div
-          className="w-24 h-24 md:w-32 md:h-32 rounded-full flex-shrink-0 overflow-hidden shadow-lg md:ml-4 mb-4 md:mb-0"
-          initial={{ opacity: 0, scale: 0.8 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.8, ease: "easeOut", delay: 0.3 }}
-        >
-          <img
-            src="../../assets/photo.png"
-            alt="Muhammad Rafif Zahdana"
-            draggable="false"
-            className="w-[100%] md:w-[10rem] h-[7rem] md:h-[120%] object-cover"
-          />
-        </motion.div>
+      </motion.div>
+      {/* Profile Photo */}
+      <motion.div
+        className="w-24 h-24 md:w-32 md:h-32 rounded-full flex-shrink-0 overflow-hidden shadow-lg md:ml-4 mb-4 md:mb-0"
+        initial={{ opacity: 0, scale: 0.8 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 0.8, ease: "easeOut", delay: 0.3 }}
+      >
+        <img
+          src="../../assets/photo.png"
+          alt="Muhammad Rafif Zahdana"
+          draggable="false"
+          className="w-[100%] md:w-[10rem] h-[7rem] md:h-[120%] object-cover"
+        />
       </motion.div>
     </div>
   );
